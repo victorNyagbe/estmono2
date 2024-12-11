@@ -1,0 +1,275 @@
+header.municipal {
+    position: relative;
+    background-position: center 40%;
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    height: 35vh;
+}
+header.municipal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  header.municipal .title-municipal{
+    color: #fff;
+}
+header.municipal .title-municipal h1,
+header.municipal .title-municipal .h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    header.municipal {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    header.municipal .title-municipal h1,
+    header.municipal .title-municipal .h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 790px) {
+    header.municipal {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        height: 20vh;
+    }
+    header.municipal .title-municipal h1, header.municipal .title-municipal .h1 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.schedule-bg {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    position: relative;
+    background-size: cover;
+    padding: 0;
+}
+
+.schedule-bg-filter {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.schedule-bg-filter .container {
+    padding: 2rem 1rem;
+}
+
+.nav-pills .nav-link {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--secondary);
+}
+
+.nav-pills .nav-link:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.nav-pills .nav-link.active:hover {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.schedule-list ul {
+    list-style-type: ' * ';
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.schedule-list ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.today-schedule ul {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.today-schedule ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.tab-content > .tab-pane {
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+small {
+    color: #ccc;
+}
+
+@media screen and (max-width: 769px) {
+    .nav-pills .nav-link {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    .schedule-list ul {
+        font-size: 0.97rem;
+    }
+
+    .today-schedule ul {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+.person .section-title {
+    margin-bottom: 2px;
+}
+
+.person .muni {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.person .muni .muni-img {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32vh;
+}
+
+.person .muni .muni-info {
+    padding: 10px 15px 40px 15px;
+    height: 22vh;
+}
+
+.person .muni .muni-info h4 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+.person .muni .muni-info p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.person .muni .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    text-align: center;
+}
+
+.person .muni .social a {
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    line-height: 22px;
+    background: #8dbf44;
+    opacity: 0.8;
+    display: inline-block;
+    color: #fff;
+}
+
+.person .muni .social a:hover {
+    background: #006103;
+}
+
+.person .muni .social i {
+    font-size: 18px;
+}
+
+.person .muni :hover .social {
+    opacity: 1;
+}
+
+@media screen and (max-width: 769px) {
+    .person .muni .muni-info {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .person .muni .muni-info {
+        height: 19vh;
+    }
+}
+
+.table .today {
+    background-color: #fff;
+    vertical-align: middle;
+    font-size: 2em;
+    color: rgb(199, 72, 72);
+}
+
+.todayActivity {
+    background-color: #fff;
+    font-size: 2em;
+    color: rgb(199, 72, 72);
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    background-color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    height: 25vh;
+}
+
+.day {
+    background-color: #fff;
+}
+
+.activities {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1.5em;
+}
+
+.times {
+    font-size: 1.5em;
+}

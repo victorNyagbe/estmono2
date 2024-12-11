@@ -1,0 +1,261 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-background {
+        height: 20vh;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.presentation-text {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: #006130;
+    margin-bottom: 0.5em;
+}
+
+.presentation-text::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.projet-title {
+    color: #006130;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+}
+
+.projet-title h4 {
+    text-align: center;
+}
+
+.projet-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.section-title h4 {
+    background-color: #006130;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 40%;
+    color: #ffffff;
+}
+
+.taxe {
+    justify-content: center;
+    text-align: center;
+    /* padding-left: 2px;
+    padding-right: 2px;
+    border: 4px solid;
+    border-color: #006130;
+    background-color: #006130;
+    border-radius: 1%; */
+    background-color: #f1f6fe;
+}
+
+.taxe-title {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.taxe-img {
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+    height: 30vh;
+}
+
+hr {
+    background-color: #8dbf44;
+    height: 0.3em;
+    width: 80%;
+}
+
+.taxe-date {
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color: #8dbf44;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float: left;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.taxe-text {
+    font-size: 1em;
+    color: #222;
+    float: left;
+    margin-bottom: 1em;
+}
+
+.taxe-btn {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+.taxe-btn a {
+    background-color: #8dbf44;
+    color: #ffffff;
+}
+
+.taxe-btn a:hover {
+    background-color: #85db02;
+    color: #ffffff;
+}
+
+/* .femm-img {
+    background-image: url("../../../../../assets/images/femm.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.description {
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+.description h6 {
+    font-size: 0.6em;
+    font-weight: bold;
+} */
+
+.school-title {
+    color: var(--secondary);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    font-size: 1.6em;
+}
+
+.school-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.school-section-title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.school-section-title::before {
+    content: "\2747";
+    padding-right: 0.7rem;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.file__card__body {
+    height: 20rem;
+    position: relative;
+    width: min(100%, 950px);
+    display: flex;
+    justify-content: center;
+}
+
+.file__card__body iframe {
+    height: 100%;
+}
+
+.file__card__filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 769px) {
+    .file__card__filter {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.file__title {
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.file__link, .file__link:is(:hover, :focus) {
+    background-color: #006130;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.file__card__footer {
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

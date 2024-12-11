@@ -1,0 +1,97 @@
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.imgbx {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 50vh;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1150px) {
+    .imgbx {
+        background-size: 100% 54vh;
+        height: 54vh;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .imgbx {
+        background-size: 100% 60vh;
+        height: 60vh;
+    }
+}
+
+.details-text {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #8dbf44;
+}
+
+.jumelage-other-image h5 {
+    color: #8dbf44;
+}
+
+.jumelage-other-image h5::before {
+    content: "\2059";
+    color: #8dbf44;
+    display: inline-block;
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.jumelage-other-image .other-image {
+    width: 100%;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.image-box .image-Bx {
+    position: relative;
+    width: calc(1200px - 150px);
+    height: calc(1200px - 50px);
+    margin-bottom: 15px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.image-box .image-Bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+@media screen and (max-width: 600px) {
+    .image-box .image-Bx {
+        width: calc(450px - 50px);
+        height: calc(450px - 20px);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    .image-box .image-Bx {
+        width: calc(600px - 50px);
+        height: calc(600px - 20px);
+    }
+}

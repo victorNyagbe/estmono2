@@ -1,0 +1,147 @@
+body {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-background {
+        height: 20vh;
+    }
+
+    .banner-filter h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .banner-filter {
+        font-size: 2.4rem;
+    }
+}
+
+.container-custom {
+    width: 100%;
+}
+
+.article-container {
+    display: grid;
+    background-color: #f0f0f096;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1.5rem;
+    padding: 2rem;
+    align-items: stretch;
+    width: 100%;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.panel-img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.panel-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.panel-info {
+    background-color: #fff;
+    color: black;
+    margin-top: 0;
+    padding: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.panel-title {
+    font-size: 1rem;
+    color: var(--secondary);
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel-subtitle {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel-info a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration-line: underline;
+    text-underline-offset: .4rem;
+}
+
+@media only screen and (max-width:  769px) {
+    .article-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .panel-title {
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 992px) {
+    .article-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

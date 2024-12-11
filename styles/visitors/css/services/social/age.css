@@ -1,0 +1,299 @@
+.banner-background {
+    background-image: url("../../../../../assets/images/personne agée.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-background {
+        height: 20vh;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.links-btn {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    justify-content: center;
+    padding: 5px;
+}
+
+.links-btn .links-title {
+    background-color: var(--secondary);
+    color: #ffffff;
+    padding-bottom: 0.8em;
+    padding: 8px;
+}
+
+.links-btn .links-title:hover {
+    background-color: var(--secondary);
+}
+
+.links-btn a {
+    color: #ffffff;
+}
+
+/* .links-btn a::after {
+    content: "\005E";
+    padding-left: 0.7rem;
+} */
+
+.links-btn span {
+    box-shadow: inset 30px 0 30px 0 rgba(34, 34, 34, 0.403);
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+}
+
+.pointerCursor:hover {
+    cursor: pointer;
+}
+
+.slide {
+    border-bottom: 1px solid var(--secondary);
+}
+
+#slide1 {
+    display: none;
+}
+
+#slide2 {
+    display: none;
+}
+
+/* .links-btn i {
+    padding-left: 0.7rem;
+} */
+
+.presentation-text {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.presentation-text::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.links-frame {
+    background-color: var(--primary);
+    position: fixed;
+    top: 27rem;
+    z-index: 3000;
+    right: 1rem;
+}
+
+.links-title {
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.links {
+    padding-left: 0.6em;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+}
+
+.links a {
+    display: block;
+    color: #000000;
+}
+
+.links a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.links a::before {
+    content: "\003E";
+    padding-right: 0.7rem;
+}
+
+.projet-title {
+    color: var(--secondary);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+}
+
+.projet-title h4 {
+    text-align: center;
+}
+
+.projet-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+    color: var(--secondary);
+}
+
+.age-img {
+    background-image: url("../../../../../assets/images/age.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.femm-img {
+    background-image: url("../../../../../assets/images/femm.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.handica-img {
+    background-image: url("../../../../../assets/images/handica.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.statut {
+    margin: 0.2em;
+    font-size: 1em;
+    background-color: var(--primary);
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+}
+
+.statut1 {
+    margin: 0.2em;
+    font-size: 1em;
+    background-color: var(--secondary);
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+}
+
+.description {
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+.description h6 {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.school-title {
+    color: var(--secondary);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+}
+
+.school-title h4 {
+    text-align: center;
+}
+
+.school-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.school-section-title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.school-section-title::before {
+    content: "\2747";
+    padding-right: 0.7rem;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.partner-content .partner-box {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.partner-content .partner-box .partner-imgBx {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 3px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.partner-content .partner-box .partner-imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.partner-content .partner-box .partner-imgBx h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+}

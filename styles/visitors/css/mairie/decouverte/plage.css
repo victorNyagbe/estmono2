@@ -1,0 +1,182 @@
+.banner-background {
+    background-image: url("../../../../../assets/images/plage.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    height: 20vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.icon-img {
+    width: 50%;
+}
+
+.icon-img img {
+    width: 100px;
+}
+
+.cadre {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ebf4453;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    width: 80px;
+    font-size: 4.5em;
+    color: #006130;
+    font-weight: 800;
+}
+
+.number-name {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-left: 4.5em;
+    font-weight: bold;
+}
+
+.beach-img {
+    background-image: url("../../../../../assets/images/plage.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+@media screen and (max-width: 790px) {
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .cadre {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    .icon-img img {
+        width: 75px;
+        padding-left: 0.5em;
+    }
+
+    .icon-title {
+        font-size: 1em;
+        text-align: right;
+        padding-right: 0.5em;
+    }
+
+    .number {
+        font-size: 2.5em;
+    }
+
+    .number-name {
+        font-size: 1.2em;
+        text-align: right;
+        padding-right: 1em;
+    }
+
+    .beach-img {
+        margin-top: 2em;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title h4 {
+    background-color: #8dbf44;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 40%;
+    color: #ffffff;
+}
+
+.galery-img {
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 25vh;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.galery-img:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition: 0.5s;
+}
+
+.galery-filter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.597);
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+}
+
+/* .galery-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
+
+.galery-name h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 790px) {
+    .galery-img {
+        margin-bottom: 1.5em;
+    }
+}

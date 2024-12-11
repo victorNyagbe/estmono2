@@ -1,0 +1,182 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.decouv {
+    justify-content: center;
+    text-align: center;
+    /* padding-left: 4px;
+    padding-right: 4px; */
+    /* border: 4px solid; */
+    /* border-color: #006130; */
+    background-color: #f1f6fe;
+}
+
+/* .decouv:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition: 0.5s;
+    background-color: #006130;
+    color: #ffffff;
+} */
+
+/* .decouv-text {
+    text-align: justify;
+    padding-left: 0.5em;
+    padding-right: 0.8em;
+} */
+
+/*.decouv-btn {*/
+    
+/*    margin-inline: 1rem;*/
+/*}*/
+
+.decouv-btn a {
+    color: white;
+    background-color: var(--primary);
+}
+
+.decouv-btn a:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 790px) {
+    .banner-background {
+        height: 20vh;
+    }
+
+    .banner-title {
+        font-size: 1.6rem;
+    }
+
+    .decouv {
+        height: auto;
+    }
+}
+
+.decouv-img {
+    background-image: url("../../../../assets/images/plage.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img2 {
+    background-image: url("../../../../assets/images/educ.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img3 {
+    background-image: url("../../../../assets/images/hotel.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img4 {
+    background-image: url("../../../../assets/images/marché.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img5 {
+    background-image: url("../../../../assets/images/station.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img6 {
+    background-image: url("../../../../assets/images/culte2.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img7 {
+    background-image: url("../../../../assets/images/hopital.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-img8 {
+    background-image: url("../../../../assets/images/site.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30vh;
+}
+
+.decouv-title {
+    font-weight: bold;
+    color: #000;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.decouv-text {
+    color: #222;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    background-color: var(--primary);
+    height: 0.1em;
+    width: 50%;
+}
+
+
+/* .decouv-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+} */
+
+.decouv-description {
+    padding: .3rem .3rem .5rem .3rem;
+}

@@ -1,0 +1,79 @@
+header.organigramme {
+    position: relative;
+    padding-top: calc(8rem + 57px);
+    padding-bottom: 8rem;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-position: center 40%;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 20vh;
+}
+header.organigramme:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+header.organigramme .title-organigramme {
+    color: #fff;
+}
+header.organigramme .title-organigramme h1,
+header.organigramme .title-organigramme .h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    header.organigramme {
+        padding-top: 6.5rem;
+        padding-bottom: 12.5rem;
+    }
+    header.organigramme .title-organigramme h1,
+    header.organigramme .title-organigramme .h1 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 790px) {
+    header.organigramme {
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+    }
+    header.organigramme .title-organigramme h1,
+    header.organigramme .title-organigramme .h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .contenu .organigramme-img {
+        width: 100%;
+        height: 37vh;
+    }
+}
+
+.contenu {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+}
+
+.organigramme-img {
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.organigramme-img img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1680px) {
+    .organigramme-img {
+    }
+}

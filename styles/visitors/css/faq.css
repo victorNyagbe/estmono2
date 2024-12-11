@@ -1,0 +1,54 @@
+body {
+    background-image: url("../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.breadcrumb-row {
+    background-image: linear-gradient(to right, #17182a, #6469c7, #d1dcf4);
+}
+
+.container.customized {
+    background-color: #fff;
+}
+
+.section-title {
+    font-weight: 200;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.faq-title {
+    font-weight: 400;
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+.questions .singleQuestion {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.questions .singleQuestion::before {
+    content: "\02D7";
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.questions .singleQuestion:hover {
+    text-decoration-line: underline;
+    color: #000;
+}
+
+.allQuestions {
+    color: #555;
+    text-decoration: none;
+    display: block;
+}
+
+.allQuestions:hover {
+    color: var(--secondary);
+}
+

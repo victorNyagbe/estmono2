@@ -1,0 +1,18 @@
+body {
+    background-image: url("../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.breadcrumb-row {
+    background-image: linear-gradient(to right, #009432, #78b140, #fff);
+}
+
+.container.customized {
+    background-color: #fff;
+}
+
+.response {
+    text-align: justify;
+    margin-top: 1rem;
+}

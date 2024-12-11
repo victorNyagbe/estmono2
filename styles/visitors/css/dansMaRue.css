@@ -1,0 +1,74 @@
+body {
+    background-image: url("../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.banner-background {
+    background-image: url("../../../assets/images/bureau\ du\ citoyen.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 32vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-filter h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.breadcrumb-row {
+    background-image: linear-gradient(to right, #17182a, #6469c7, #d1dcf4);
+}
+
+.presentation-text {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: #006130;
+    margin-bottom: 0.5em;
+}
+
+.presentation-text::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-background {
+        height: 30vh;
+    }
+
+    .banner-filter h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .banner-filter {
+        font-size: 2.4rem;
+    }
+}
+
+.custom-container {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.sendImageButton {
+    background: var(--secondary);
+    color: #fff;
+}

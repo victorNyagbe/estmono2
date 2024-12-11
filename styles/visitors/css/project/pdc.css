@@ -1,0 +1,116 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-background {
+        height: 20vh;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.first-title {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.first-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.text {
+    font-size: 1.2em;
+}
+
+.all-programme {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: var(--primary);
+    padding-top: 2em;
+    padding-bottom: 1.3em;
+}
+
+.programme {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.total {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: #000000;
+}
+
+.project {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.project .project-definition {
+    color: #000000;
+    font-weight: 400;
+}
+
+.project::before {
+    content: "\25C6";
+    padding-right: 0.7rem;
+}
+
+.total2 {
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.global-solde {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #fbfe2fab;
+    padding-top: 2em;
+    padding-bottom: 1.3em;
+}

@@ -1,0 +1,127 @@
+body {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-background {
+        height: 20vh;
+    }
+
+    .banner-filter h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .banner-filter {
+        font-size: 2.4rem;
+    }
+}
+
+.container .custom {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 1.5rem;
+    padding-bottom: 0.9rem;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panel-video {
+    height: 28vh;
+    width: 100%;
+}
+
+.panel-info {
+    background-color: #efefef;
+    color: black;
+    height: 12vh;
+    padding: 8px 6px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.panel-title {
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+@media screen and (max-width: 769px) {
+    .container .custom {
+        padding-top: 1rem;
+    }
+
+    /* .panel-video {
+        height: 24vh;
+    } */
+
+    .panel-info {
+        height: auto;
+    }
+
+    .panel-title {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 769px) {
+    .panel-video {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .panel-video {
+        height: 22vh;
+        width: 100%;
+    }
+
+    .panel-info {
+        height: 15vh;
+    }
+
+    .panel-title {
+        font-size: 1rem;
+        color: var(--primary);
+        text-transform: uppercase;
+        text-align: justify;
+    }
+}

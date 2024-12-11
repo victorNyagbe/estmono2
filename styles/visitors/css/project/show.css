@@ -1,0 +1,116 @@
+.contenu {
+    /* background-image: url('../../../../assets/images/fond~2.jpg'); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contenu .contenu:before {
+    background-color: rgba(0, 97, 48, 0.5);
+}
+
+.show {
+    margin-top: -3.5em;
+}
+
+.return-projet {
+    color: var(--primary);
+}
+
+.return-projet:hover {
+    color: var(--secondary);
+}
+
+.big-show {
+    max-width: 750px;
+    border: none;
+}
+
+.big-show .big-show-img {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.big-show-title {
+    color: var(--secondary);
+    font-size: 2em;
+}
+
+.big-show-text {
+    font-size: 1.3em;
+}
+
+.top-small-show {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.small-show {
+    max-width: 400px;
+    height: 130px;
+    background-color: #fff;
+    border: none;
+}
+
+.small-show-img {
+    margin-left: 1em;
+    height: 6em;
+    margin-top: 1em;
+    width: 6em;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.small-show-title {
+    font-size: 1em;
+    color: var(--secondary);
+}
+
+.small-show-text {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.small-show-date {
+    font-style: italic;
+    margin-top: -2em;
+}
+
+.small-show-link {
+    font-size: 0.8em;
+    color: #8dbf44;
+}
+
+.small-show-link:hover {
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 790px) {
+    .big-show .big-show-img {
+        position: relative;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .big-show .big-show-title {
+        font-size: 1.5em;
+    }
+    .top-small-show {
+        margin-top: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--secondary);
+    }
+    .small-show {
+        height: auto;
+    }
+    .small-show-link {
+        margin-left: 1.66em;
+    }
+}

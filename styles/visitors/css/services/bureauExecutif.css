@@ -1,0 +1,160 @@
+header.municipal {
+    position: relative;
+    background-position: top;
+    background-image: url("../../../../assets/images/conseil\ municipal.jpg");
+    background-size: cover;
+    height: 35vh;
+}
+header.municipal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 97, 48, 0.5);
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+header.municipal .title-municipal {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+header.municipal .title-municipal h1,
+header.municipal .title-municipal .h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    header.municipal {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    header.municipal .title-municipal h1,
+    header.municipal .title-municipal .h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 790px) {
+    header.municipal {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        height: 20vh;
+    }
+    header.municipal .title-municipal h1,
+    header.municipal .title-municipal .h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .contenu .text-municipal {
+        font-size: 1em;
+        margin-top: -2.5em;
+        padding-top: 1.5em;
+        margin-bottom: -4em;
+    }
+}
+/* contenu */
+/*.contenu{
+      background-image: url('../../../assets/images/fond~2.jpg');
+  } */
+
+.person {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+}
+
+.person .section-title {
+    margin-bottom: 2px;
+}
+
+.person .muni {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.person .muni .muni-img {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32vh;
+}
+
+.person .muni .muni-info {
+    padding: 10px 15px 40px 15px;
+    height: 22vh;
+}
+
+.person .muni .muni-info h4 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #8dbf44;
+}
+
+.person .muni .muni-info p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.person .muni .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    text-align: center;
+}
+
+.person .muni .social a {
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    line-height: 22px;
+    background: #8dbf44;
+    opacity: 0.8;
+    display: inline-block;
+    color: #fff;
+}
+
+.person .muni .social a:hover {
+    background: #006103;
+}
+
+.person .muni .social i {
+    font-size: 18px;
+}
+
+.person .muni :hover .social {
+    opacity: 1;
+}
+
+@media screen and (max-width: 769px) {
+    .person .muni .muni-info {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .person .muni .muni-info {
+        height: 19vh;
+    }
+}

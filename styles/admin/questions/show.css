@@ -1,0 +1,16 @@
+.card-header a {
+    color: #006130;
+}
+
+.headingOne2 {
+    color: white;
+    background-color: #78b140;
+}
+
+.headingOne2 a {
+    color: white;
+}
+
+.card-body div, .card-body p {
+    font-size: 1.1rem;
+}

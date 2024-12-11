@@ -1,0 +1,211 @@
+body {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.actualite-image {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 55vh;
+}
+
+.actualite-calendar {
+    font-size: 0.8rem;
+    color: #111;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 0.7rem;
+}
+
+.actualite-title h4 {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.actualite-description {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.other-actualites {
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.other-actualites::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 5rem;
+    height: 1rem;
+    right: 0;
+    top: 50%;
+    background-image: linear-gradient(to right, #17182a, #6469c7, #d1dcf4);
+    transform: translateY(-50%);
+}
+
+.allOtherActualitesPanel {
+    margin-top: 1.5rem;
+}
+
+.other-actualites-panel {
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+.other-actualites-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20vh;
+}
+
+.other-actualites-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+.other-actualites-text {
+    font-size: 0.9rem;
+}
+
+.other-actualites-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+.other-actualites-date small:first-child {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.other-actualites-date .show-more {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 5px 7px;
+    border: 1px solid var(--secondary);
+    transition: all 0.3s;
+}
+
+.other-actualites-date .show-more:hover {
+    background-color: transparent;
+    border: none;
+    animation-name: backgroundChanged;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transition: 0.3s;
+}
+
+@keyframes backgroundChanged {
+    0% {
+        background-color: transparent;
+    }
+    33% {
+        background-color: #6469c7;
+        color: #fff;
+    }
+    66% {
+        background-color: #17182a;
+        color: #fff;
+    }
+    100% {
+        background-image: linear-gradient(to right, #17182a, #6469c7, #d1dcf4);
+        color: #fff;
+    }
+}
+
+.actualite-cal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+.actualite-calendar {
+    margin-bottom: 0;
+}
+
+.actualite-share {
+    background-color: #064d00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.notif_card {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    z-index: 9999;
+    background-color: #117c07;
+    padding: 1.2rem 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .notif_card {
+        left: 3%;
+        width: 97% !important;
+    }
+}
+
+.notif_text {
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fadeInOut {
+    animation-name: fadeInOut;
+    animation-duration: 10s;
+    animation-direction: linear;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .actualite-image {
+        height: 45vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .actualite-image {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .actualite-image {
+        height: 48vh;
+    }
+}

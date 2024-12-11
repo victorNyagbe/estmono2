@@ -1,0 +1,324 @@
+body {
+    overflow-x: hidden;
+}
+
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container-fluid {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.presentation-text {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.presentation-text::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+/* .file__card {
+    position: relative;
+} */
+
+.file__card__body {
+    height: 20rem;
+    position: relative;
+    width: min(100%, 950px);
+    display: flex;
+    justify-content: center;
+}
+
+.file__card__body iframe {
+    height: 100%;
+}
+
+.file__card__filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 769px) {
+    .file__card__filter {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.file__title {
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.file__link, .file__link:is(:hover, :focus) {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.file__card__footer {
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.projet-title {
+    color: var(--secondary);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+}
+
+.projet-title h4 {
+    text-align: center;
+}
+
+.projet-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.jumelage-img {
+    background-image: url("../../../../assets/images/jum.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.jumelage-title {
+    text-align: center;
+}
+
+.text-filter {
+    position: absolute;
+    background-color: #ffffffcc;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.jumelage-img:hover .text-filter,
+.text-filter:hover {
+    position: absolute;
+    background-color: #ffffffcc;
+    height: 30vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.jumelage-text {
+    color: #000000;
+}
+
+.button-plus {
+    display: none;
+    font-size: 2rem;
+    transition: all 0.5s;
+}
+
+.jumelage-img:hover .button-plus,
+.text-filter:hover .button-plus {
+    display: inline;
+    transition: 0.5s;
+    color: #000000;
+}
+
+.jumelage-text .button-plus:hover {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+    .jumelage {
+        height: 35vh;
+    }
+    .jumelage-img {
+        height: 30vh;
+    }
+
+    .text-filter {
+        height: 15vh;
+    }
+}
+
+/* .jumelage-img:hover .button-plus,
+.text-filter:hover .button-plus,
+.button-plus:hover {
+    color: #4e4e4e;
+} */
+
+.femm-img {
+    background-image: url("../../../../assets/images/femm.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.description {
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+.description h6 {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.school-title {
+    color: var(--secondary);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.school-title h4 {
+    text-align: center;
+}
+
+.school-title::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.school-section-title {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.school-section-title::before {
+    content: "\2747";
+    padding-right: 0.7rem;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 97, 48, 0.437);
+    color: white;
+}
+
+.jumelag {
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    border-color: rgba(77, 39, 0, 0.277);
+}
+
+/* .jumelag-title {
+    font-weight: bold;
+    color: #000000;
+}
+
+.jumelag-text {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.jumelag-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.jumelag-btn a {
+    font-size: 1.5em;
+}
+
+.hr1 {
+    background-color: #ae5501;
+    width: 50%;
+}
+
+.hr2 {
+    background-color: #ae5501;
+    height: 00.2em;
+} */
+
+.jumelag-content {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+}
+
+.form-title {
+    float: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.validate-btn {
+    background-color: #006130;
+    color: #ffffff;
+    margin-top: 2em;
+    float: left;
+}
+
+.validate-btn:hover {
+    background-color: #8dbf44;
+    color: #ffffff;
+}

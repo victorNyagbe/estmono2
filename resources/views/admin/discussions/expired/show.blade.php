@@ -1,0 +1,80 @@
+@extends('admin.layouts.admin')
+
+@section('style')
+    <link rel="stylesheet" href="{{ asset('styles/admin/discussions/conversations.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}" id="token">
+@endsection
+
+@section('content')
+    <div class="content-wrapper">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0">Details de conversation</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Accueil</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('admin.discussions.list') }}">Discussions</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('admin.conversationNotClosedButExpiredIndex') }}">Expirees</a></li>
+                            <li class="breadcrumb-item active">Details de conversation</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+
+        <section class="content">
+            <div class="container-fluid">
+                @include('admin.includes.messageReturned')
+
+                <div class="row justify-content-center">
+
+                   <div class="col-12">
+                       <div class="d-flex justify-content-center my-4">
+                           <h3 class="text-center">{{ __('Discussion #') . $discussion->custom_id }}</h3>
+                       </div>
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between flex-column flex-md-row">
+                                <h4><i class="fa fa-commenting"></i> Panel de Discussion </h4>
+                                <a href="{{ route('admin.closeExpiredDiscussion', $discussion) }}" class="btn btn-sm btn-danger" id="quitDiscussion">Fermer la discussion</a>
+                            </div>
+                            <div class="card-body">
+                                <div id="data-message">
+                                    <div class="d-none" id="converse" data-converse="{{ $discussion->creator }}"></div>
+                                    @if (count($conversations) > 0)
+                                        @foreach ($conversations as $conversation)
+                                            @if ($conversation->person_status == 'client')
+                                                <div class="client-message mb-4">
+                                                    <div><span class="author">Vous,</span> <span class="published-date">{{ \Carbon\Carbon::parse($conversation->created_at)->format('d/m/Y') . " à " . \Carbon\Carbon::parse($conversation->created_at)->format('H:i') }}</span></div>
+                                                    <p>{{ $conversation->message }}</p>
+                                                </div>
+                                            @endif
+                                            @if ($conversation->person_status == 'server')
+                                                <div class="server-message mb-4">
+                                                    <div><span class="author">Bureau Golfe1,</span> <span class="published-date">{{ \Carbon\Carbon::parse($conversation->created_at)->format('d/m/Y') . " à " . \Carbon\Carbon::parse($conversation->created_at)->format('H:i') }}</span></div>
+                                                    <p>{{ $conversation->message }}</p>
+                                                </div>
+                                            @endif
+                                        @endforeach
+                                    @endif
+                                </div>
+                                {{ session()->put('tahc_ad', $discussion->custom_id) }}
+                                <div class="discussionQuit">
+                                    <span class="fa fa-lock"></span> Cette discussion est expirée. Vous ne pouvez plus continuer cette conversation. Veuillez la fermer. Merci
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </div>
+@endsection
+
+@section('script')
+
+@endsection
+
+

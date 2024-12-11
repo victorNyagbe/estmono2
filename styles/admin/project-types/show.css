@@ -1,0 +1,15 @@
+.project-image {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vh;
+    position: relative;
+}
+
+.table-striped td {
+    vertical-align: middle;
+}
+
+.table th {
+    border-top: none;
+}

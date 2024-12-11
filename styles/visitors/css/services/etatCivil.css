@@ -1,0 +1,97 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-background {
+        height: 20vh;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.civil-section-title {
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.civil-section-title::before {
+    content: "\2747";
+    padding-right: 0.7rem;
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header a {
+    text-transform: uppercase;
+}
+
+.card-header:hover {
+    color: white;
+    background-image: linear-gradient(to right,  #17182a, #6469c7, #d1dcf4);
+}
+
+.card-header:hover a {
+    color: white;
+}
+
+#headingOne2 {
+    color: white;
+    background-image: linear-gradient(to right,  #17182a, #6469c7, #d1dcf4);
+}
+
+#headingOne2 a {
+    color: white;
+}
+
+.download-link i {
+    margin-left: 0.2rem;
+}
+
+.download-link .civil-list {
+    font-weight: bold;
+}
+
+.download-link .civil-list::before {
+    content: "\2023";
+    padding-right: 0.7rem;
+    font-size: 1.3em;
+}

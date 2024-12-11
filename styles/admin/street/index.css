@@ -1,0 +1,9 @@
+.number {
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.number span {
+    padding-right: 0.9rem;
+}

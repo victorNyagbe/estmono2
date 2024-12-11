@@ -1,0 +1,150 @@
+.content-header {
+    background-color: black;
+    color: white;
+}
+
+.content-title {
+    color: white;
+}
+
+.content-header .breadcrumb-item.active {
+    color: #fff;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subheader a, .subheader a:hover, .subheader a:focus {
+    background-color: #146c53;
+    color: white;
+}
+
+.subheader form {
+    flex-basis: 15rem;
+}
+
+.subheader input.form-control {
+    border-radius: 1.5rem;
+    background-color: #bbb;
+    color: #000;
+    font-weight: 500;
+}
+
+.modal-title {
+    color: #146c53;
+    font-weight: 600;
+}
+
+.modal-header .close span {
+    color: #146c53;
+    font-weight: 600;
+}
+
+#addArchive form input.form-control {
+    border-radius: 1.5rem;
+    background-color: #bbb;
+    color: #000;
+}
+
+#addArchive form button[type="submit"] {
+    text-transform: uppercase;
+}
+
+.document-panel {
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 1.3rem;
+    padding-top: 0.7rem;
+}
+
+.document-pdfIconBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.7rem;
+    height: 45%;
+}
+
+.document-pdfIcon {
+    position: relative;
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+}
+
+.document-pdfIcon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.document-infos {
+    background-color: #146c53;
+    height: 55%;
+    border-bottom-left-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+}
+
+.document-titleBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0.4rem;
+    height: 50%;
+}
+
+.document-title {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.document-title-date {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.document-separator {
+    width: 80%;
+    height: 0.1rem;
+    margin-left: 10%;
+    background-color: rgba(255, 255, 255, 0.737);
+}
+
+.document-actions {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+thead {
+    background-color: #146c53;
+}
+
+th {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+tr td:first-of-type, tr td:last-of-type {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #000;
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #777;
+    color: white;
+}
+

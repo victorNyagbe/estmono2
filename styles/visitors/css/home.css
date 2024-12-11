@@ -1,0 +1,132 @@
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .navbarCustomized {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+}
+
+.slide-img {
+    width: 100%;
+    height: 80dvh;
+    position: relative;
+}
+
+.slide-img img {
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.banniere-mask {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 4.5rem;
+    width: fit-content;
+    background-color: #2b3184cf;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+}
+
+.first, .second {
+    font-size: 2rem;
+}
+
+.commune-panel h3, .commune-panel h5 {
+    color: white;
+}
+
+.commune-name {
+    font-size: 2.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(20, end) infinite alternate;
+}
+
+.commune-panel2 .second-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.flag__animated {
+    overflow: hidden;
+    width: 100%;
+}
+
+.localisation-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.localisation-grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: #006130;
+    padding: 10px;
+}
+
+.localisation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 97%;
+}
+
+.localisation-item h4 {
+    color: white;
+    font-size: 1rem;
+}
+
+.localisation-item iframe {
+    position: relative;
+
+}
+
+@media only screen and (max-width: 769px) {
+    .banniere-mask {
+        display: none;
+    }
+
+    .slide-img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .localisation-grid {
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .localisation-item {
+        width: 100%;
+    }
+}

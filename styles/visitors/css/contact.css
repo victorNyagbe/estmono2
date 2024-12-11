@@ -1,0 +1,281 @@
+header.contact {
+    position: relative;
+    background-position: top;
+    background-image: url("../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    height: 35vh;
+}
+
+header.contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+header.contact .title-contact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+header.contact .title-contact h1,
+header.contact .title-contact .h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    header.contact {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    header.contact .title-contact h1,
+    header.contact .title-contact .h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    header.contact {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        height: 20vh;
+    }
+
+    header.contact .title-contact h1,
+    header.contact .title-contact .h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .contenu .text-contact {
+        font-size: 1em;
+        margin-top: -2.5em;
+        padding-top: 1.5em;
+        margin-bottom: -4em;
+    }
+}
+
+.contenu {
+    background-image: url("../../../assets/images/fond~2.jpg");
+}
+
+.cadre {
+    margin-bottom: 2em;
+    background-color: #fff;
+    margin-top: -4em;
+    padding-bottom: 8em;
+    margin-bottom: -4em;
+}
+
+.top-input {
+    font-size: 1.3em;
+    margin-top: 1.2em;
+}
+
+.top-input-alert {
+    color: rgb(136, 4, 4);
+    font-size: 0.8em;
+    margin-top: 4em;
+}
+
+.space-message {
+    height: 12em;
+}
+
+.button {
+    background-color: var(--secondary);
+    width: 250px;
+    height: 50px;
+    margin-left: 17em;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+    box-shadow: 0px 0 30px rgba(34, 34, 34, 0.3);
+}
+
+.top-reseau {
+    font-size: 1.3em;
+    margin-top: 1.2em;
+}
+
+.social {
+    margin-top: 3em;
+}
+
+.social a {
+    color: var(--secondary);
+}
+
+.email {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.email:hover {
+    color: #fff;
+    background-color: rgb(245, 66, 66);
+}
+
+.cadre .email i {
+    font-size: 2rem;
+}
+
+.cadre .ens-email:hover {
+    color: rgb(245, 66, 66);
+}
+
+.cadre .whatsapp {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.cadre .whatsapp:hover {
+    color: #fff;
+    background-color: #128c7e;
+}
+
+.cadre .whatsapp i {
+    font-size: 2rem;
+}
+
+.cadre .ens-whatsapp:hover {
+    color: #128c7e;
+}
+
+.cadre .facebook {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.cadre .facebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.cadre .facebook i {
+    font-size: 2rem;
+}
+
+.cadre .ens-facebook:hover {
+    color: #3b5998;
+}
+
+.cadre .instagram {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.cadre .instagram:hover {
+    color: #fff;
+    background-color: #d6316e;
+}
+
+.cadre .instagram i {
+    font-size: 2rem;
+}
+
+.cadre .ens-instagram:hover {
+    color: #d6316e;
+}
+
+.cadre .telephone {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.cadre .telephone:hover {
+    color: #fff;
+    background-color: #000000;
+}
+
+.cadre .telephone i {
+    font-size: 2rem;
+}
+
+.cadre .ens-telephone:hover {
+    color: #000000;
+}
+
+.cadre .linkedin {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.cadre .linkedin:hover {
+    color: #fff;
+    background-color: #0077b5;
+}
+
+.cadre .linkedin i {
+    font-size: 2rem;
+}
+
+.cadre .ens-linkedin:hover {
+    color: #0077b5;
+}
+
+.nom-social {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 790px) {
+    .button {
+        margin-left: 2.5em;
+    }
+
+    .top-reseau {
+        margin-top: 3em;
+    }
+
+    .social {
+        margin-top: 2em;
+    }
+
+    .nom-social {
+        font-size: 1.3em;
+    }
+}

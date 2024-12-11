@@ -1,0 +1,104 @@
+.header__section {
+    position: relative;
+    background-position: top;
+    background-image: url("../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    height: 35vh;
+}
+
+.header__section__filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 97, 48, 0.338);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.title-about {
+    text-align: center;
+    color: #fff;
+}
+
+.title-about h1,
+.title-about .h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    /* header.about {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    } */
+    .title-about h1,
+    .title-about .h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 790px) {
+
+    .header__section {
+        height: 20vh;
+    }
+
+    .title-about h1,
+    .title-about .h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .contenu .text-about {
+        font-size: 1em;
+        padding-top: 1.5em;
+    }
+}
+
+.contenu {
+    background-image: url("../../../assets/images/fond~2.jpg");
+}
+
+.contenu .container {
+    background-color: #f9f9f9;
+}
+
+.text-about {
+    /* background-color: rgba(226, 225, 223, 0.6); */
+    width: 100%;
+    padding: 4rem 8rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.text-about p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 769px) {
+    .text-about {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+.download {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: var(--secondary);
+    color: white;
+    padding: .8rem 1.4rem;
+    border-radius: .25rem;
+}
+
+.download:hover {
+    background-color: var(--primary);
+    color: #f9f9f9;
+}

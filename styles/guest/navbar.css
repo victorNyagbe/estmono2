@@ -1,0 +1,116 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    z-index: 1000;
+    width: 100%;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+nav.sticky {
+    background-color: #ccc;
+    padding: 10px 80px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+nav .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+nav.sticky .logo {
+    color: rgb(124, 72, 4);
+}
+
+nav .menu {
+    position: relative;
+    display: flex;
+}
+
+nav .menu li {
+    list-style: none;
+    margin-left: 1.9rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav.sticky .menu li a {
+    color: rgb(124, 72, 4);
+}
+
+nav .menu .active, nav .menu li:hover {
+    border-bottom: 4px solid rgb(124, 72, 4);
+    transition: 0.5s;
+}
+
+.submenu {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -15px;
+    display: none;
+    background-color: rgba(124, 72, 4, 0.85);
+}
+
+.custom-caret {
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+
+nav .menu li:hover .submenu {
+    display: block;
+}
+
+nav .menu li:hover .custom-caret{
+    transform: rotate(180deg);
+    color:rgb(124, 72, 4);
+    transition: all 1s;
+}
+
+.submenu ul {
+    padding-left: 0;
+}
+
+.submenu ul li {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+    text-align: left;
+    padding-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px dotted #ddd;
+}
+
+nav.sticky .submenu ul li a {
+    color: #fff;
+}
+
+.submenu ul li:hover {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.submenu ul li:hover a {
+    color: rgb(124, 72, 4);
+    font-weight: 500;
+}
+
+.submenu ul li:first-child {
+    padding-top: 0.3rem;
+}
+
+.submenu ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+

@@ -1,0 +1,166 @@
+.contenu {
+    /* background-image: url('../../../../assets/images/fond~2.jpg'); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contenu .contenu:before {
+    background-color: rgba(0, 97, 48, 0.5);
+}
+
+.show {
+    margin-top: -3.5em;
+}
+
+.return-projet {
+    color: #8dbf44;
+}
+
+.return-projet:hover {
+    color: #006130;
+}
+
+.big-show {
+    max-width: 750px;
+    border: none;
+}
+
+.big-show .big-show-img {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.big-show-title {
+    color: #006130;
+    font-size: 2em;
+}
+
+.partner-text {
+    font-size: 0.9em;
+    background-color: #006130;
+    color: #fff;
+    display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid;
+    border-color: #8dbf44;
+}
+
+.partner-text:hover {
+    background-color: #8dbf44;
+    color: #fff;
+    border-color: #006130;
+}
+
+.big-show-text {
+    font-size: 1.3em;
+}
+
+.top-small-show {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.small-show {
+    max-width: 400px;
+    height: 130px;
+    background-color: #fff;
+    border: none;
+}
+
+.small-show-img {
+    margin-left: 1em;
+    height: 6em;
+    margin-top: 1em;
+    width: 6em;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.small-show-title {
+    font-size: 1em;
+    color: #006130;
+}
+
+.small-show-text {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.small-show-date {
+    font-style: italic;
+    margin-top: -2em;
+}
+
+.small-show-link {
+    font-size: 0.8em;
+    color: #8dbf44;
+}
+
+.small-show-link:hover {
+    color: #006130;
+}
+
+@media screen and (max-width: 790px) {
+    .big-show .big-show-img {
+        position: relative;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .big-show .big-show-title {
+        font-size: 1.5em;
+    }
+    .top-small-show {
+        margin-top: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #006130;
+    }
+    .small-show {
+        height: auto;
+    }
+    .small-show-link {
+        margin-left: 1.66em;
+    }
+}
+
+.partner-block {
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    border-color: #8dbf44;
+    background-color: #006130;
+}
+
+.partner-content {
+    padding: 2em;
+}
+
+.partner-title {
+    font-weight: bold;
+    color: #fff;
+}
+
+.partner-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.partner-btn a {
+    font-size: 1em;
+}
+
+.hr1 {
+    background-color: #8dbf44;
+    width: 50%;
+}

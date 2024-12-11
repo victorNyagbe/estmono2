@@ -1,0 +1,70 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-background {
+        height: 20vh;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.presentation-text {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+}
+
+.presentation-text::before {
+    content: "\2756";
+    padding-right: 0.7rem;
+}
+
+.toCenter {
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.carte-img img {
+    width: 80%;
+}

@@ -1,0 +1,159 @@
+.banner-background {
+    background-image: url("../../../../assets/images/iotabstract.jpg");
+    background-size: cover;
+    background-position: center 40%;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 790px) {
+    .banner-background {
+        height: 20vh;
+    }
+
+    .banner-title {
+        font-size: 1.6rem;
+    }
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.presentation .presentation-text {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.lois-section-title {
+    color: #8dbf44;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lois-section-title::before {
+    content: "\2747";
+    padding-right: 0.7rem;
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header a {
+    text-transform: uppercase;
+}
+
+.card-header:hover {
+    color: white;
+    background-image: linear-gradient(to right, #6d8d3d, #8dbf44, #8bcd28);
+}
+
+.card-header:hover a {
+    color: white;
+}
+
+#headingOne2 {
+    color: white;
+    background-image: linear-gradient(to right, #6d8d3d, #8dbf44, #8bcd28);
+}
+
+#headingOne2 a {
+    color: white;
+}
+
+.download-link i {
+    margin-left: 0.2rem;
+}
+
+.download-link .civil-list {
+    font-weight: bold;
+}
+
+.download-link .civil-list::before {
+    content: "\2023";
+    padding-right: 0.7rem;
+    font-size: 1.3em;
+}
+
+.file__card__body {
+    height: 20rem;
+    position: relative;
+    width: min(100%, 950px);
+    display: flex;
+    justify-content: center;
+}
+
+.file__card__body iframe {
+    height: 100%;
+}
+
+.file__card__filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 769px) {
+    .file__card__filter {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.file__title {
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.file__link, .file__link:is(:hover, :focus) {
+    background-color: #006130;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.file__card__footer {
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

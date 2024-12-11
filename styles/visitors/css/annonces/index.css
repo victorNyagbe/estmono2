@@ -1,0 +1,114 @@
+header.contact {
+    position: relative;
+    background-position: center;
+    background-image: url("../../../../assets/images/annonce.jpg");
+    background-size: cover;
+    height: 35vh;
+}
+
+header.contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 97, 48, 0.5);
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+header.contact .title-contact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+header.contact .title-contact h1,
+header.contact .title-contact .h1 {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    header.contact {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    header.contact .title-contact h1,
+    header.contact .title-contact .h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    header.contact {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    header.contact .title-contact h1,
+    header.contact .title-contact .h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .contenu .text-contact {
+        font-size: 1em;
+        margin-top: -2.5em;
+        padding-top: 1.5em;
+        margin-bottom: -4em;
+    }
+}
+
+.annonce-card {
+    height: 20vh;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgb(230, 230, 230);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+}
+
+.annonce-card-text h5 {
+    text-align: center;
+}
+
+.annonce-card-link a {
+    text-align: center;
+}
+
+.annonce-published-at {
+    position: absolute;
+    bottom: 0;
+    right: 0.4rem;
+}
+
+.annonce-card-id {
+    position: absolute;
+    width: 2.5rem;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    background-color: #006130;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+}

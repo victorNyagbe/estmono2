@@ -1,0 +1,64 @@
+.banner-background {
+    background-image: url("../../../../assets/images/5-1.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 35vh;
+}
+
+.banner-filter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.custom-banner {
+    background-image: url("../../../../assets/images/fond~2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: repeat-y;
+}
+
+.custom-banner .container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header a {
+    text-transform: uppercase;
+}
+
+.card-header:hover {
+    color: white;
+    background-image: linear-gradient(to right, #6d8d3d, #8dbf44, #8bcd28);
+}
+
+.card-header:hover a {
+    color: white;
+}
+
+#headingOne2 {
+    color: white;
+    background-image: linear-gradient(to right, #6d8d3d, #8dbf44, #8bcd28);
+}
+
+#headingOne2 a {
+    color: white;
+}
