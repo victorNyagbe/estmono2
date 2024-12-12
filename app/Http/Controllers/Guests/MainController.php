@@ -480,12 +480,7 @@ class MainController extends Controller
         return view('guests.services.sante', compact('page'));
     }
 
-    public function culture()
-    {
-        $page = 'mairie';
 
-        return view('guests.services.culture', compact('page'));
-    }
 
     public function securite()
     {

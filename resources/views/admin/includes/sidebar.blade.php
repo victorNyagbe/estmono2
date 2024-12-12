@@ -106,6 +106,12 @@
                             <p>Marchés publics</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.mairie.culture.index') }}" class="nav-link {{ $page_item == 'admin.culture' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Culture</p>
+                        </a>
+                    </li>
                 </ul>
             </li>
 

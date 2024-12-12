@@ -24,6 +24,8 @@ use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
 use App\Http\Controllers\Guests\AnnonceController as GuestsAnnonceController;
 use App\Http\Controllers\Admin\ActualiteController as AdminActualiteController;
 use App\Http\Controllers\Admin\ActuVideoController as AdminActuVideoController;
+use App\Http\Controllers\Admin\CultureController;
+use App\Http\Controllers\Guests\CultureController as GuestCultureController;
 use App\Http\Controllers\Guests\DiscussionController as GuestsDiscussionController;
 
 // Route::get('/', [MainController::class, 'home_maintenance'])->name('guests.maintenance');
@@ -180,7 +182,7 @@ Route::prefix('')->as('guests.')->group(function () {
 
         Route::get('/sante', [MainController::class, 'sante'])->name('sante');
 
-        Route::get('/culture', [MainController::class, 'culture'])->name('culture');
+        Route::get('/culture', [GuestCultureController::class, 'culture'])->name('culture');
 
         Route::get('/securite', [MainController::class, 'securite'])->name('securite');
 
@@ -393,6 +395,16 @@ Route::prefix('admin/')->as('admin.')->group(function () {
             Route::patch('{education}/update-processing', [EducationController::class, 'update'])->name('mairie.education.update');
 
             Route::get('{education}/destroy-processing', [EducationController::class, 'destroy'])->name('mairie.education.destroy');
+        });
+
+        Route::prefix('culture/')->group(function () {
+            Route::get('', [CultureController::class, 'index'])->name('mairie.culture.index');
+
+            Route::post('store-processing', [CultureController::class, 'store'])->name('mairie.culture.store');
+
+            Route::patch('{culture}/update-processing', [CultureController::class, 'update'])->name('mairie.culture.update');
+
+            Route::get('{culture}/destroy-processing', [CultureController::class, 'destroy'])->name('mairie.culture.destroy');
         });
 
     });

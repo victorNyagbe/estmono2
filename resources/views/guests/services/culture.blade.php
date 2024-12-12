@@ -98,33 +98,30 @@ La commune met en avant les artistes locaux et reconnait des talents locaux.
                                 <tr style="background-color: #2b3481; color: white; text-align: center;">
                                     <th width="50">N°</th>
                                     <th>CENTRE CULTUREL</th>
-                                    <th>CONTACT</th>
                                     <th>RESPONSABLE</th>
+                                    <th>CONTACT</th>
                                     <th width="80">ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
-                                 <tr>
-                                    <td>3</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
+
+                                <?php $compteur1 = 1; $compteur2 = 1; ?>
+                                @forelse ($culture_publiques as $culture_publique)
+                                    <tr>
+                                        <td>{{ $compteur1 }}</td>
+                                        <td>{{ $culture_publique->name }}</td>
+
+                                        <td>{{ $culture_publique->responsable == null ? '-' : $culture_publique->responsable }}</td>
+                                        <td>{{ $culture_publique->contact == null ? '-' : $culture_publique->contact  }}</td>
+                                        <td><a href="tel:{{$culture_publique->contact  }}" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                    </tr>
+                                    <?php $compteur1++; ?>
+                                @empty
+                                    <tr class="text-center">
+                                        <td colspan="6">Information en cours ...</td>
+                                    </tr>
+                                @endforelse
+
                             </tbody>
                         </table>
                     </div>
@@ -145,33 +142,28 @@ La commune met en avant les artistes locaux et reconnait des talents locaux.
                                 <tr style="background-color: #2b3481; color: white; text-align: center;">
                                     <th width="50">N°</th>
                                     <th>CENTRE CULTUREL</th>
-                                    <th>CONTACT</th>
                                     <th>RESPONSABLE</th>
+                                    <th>CONTACT</th>
                                     <th width="80">ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
+
+                                @forelse ($culture_privees as $culture_privee)
                                 <tr>
-                                    <td>1</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                    <td>{{ $compteur2 }}</td>
+                                    <td>{{ $culture_privee->name }}</td>
+
+                                    <td>{{ $culture_privee->responsable == null ? '-' :  $culture_privee->responsable }}</td>
+                                    <td>{{ $culture_privee->contact == null ? '-' : $culture_privee->contact }}</td>
+                                    <td><a href="tel:{{$culture_privee->contact  }}" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                <?php $compteur2++; ?>
+                            @empty
+                                <tr class="text-center">
+                                    <td colspan="6">Information en cours ...</td>
                                 </tr>
-                                 <tr>
-                                    <td>3</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
+                            @endforelse
                             </tbody>
                         </table>
                     </div>
