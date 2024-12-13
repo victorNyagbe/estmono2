@@ -112,6 +112,13 @@
                             <p>Culture</p>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('admin.mairie.environnement.index') }}" class="nav-link {{ $page_item == 'admin.environnement' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Environnement</p>
+                        </a>
+                    </li>
                 </ul>
             </li>
 

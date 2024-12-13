@@ -25,7 +25,9 @@ use App\Http\Controllers\Guests\AnnonceController as GuestsAnnonceController;
 use App\Http\Controllers\Admin\ActualiteController as AdminActualiteController;
 use App\Http\Controllers\Admin\ActuVideoController as AdminActuVideoController;
 use App\Http\Controllers\Admin\CultureController;
+use App\Http\Controllers\Admin\EnvironnementContoller;
 use App\Http\Controllers\Guests\CultureController as GuestCultureController;
+use App\Http\Controllers\Guests\EnvironnementContoller as GuestEnvironnementController;
 use App\Http\Controllers\Guests\DiscussionController as GuestsDiscussionController;
 
 // Route::get('/', [MainController::class, 'home_maintenance'])->name('guests.maintenance');
@@ -186,7 +188,7 @@ Route::prefix('')->as('guests.')->group(function () {
 
         Route::get('/securite', [MainController::class, 'securite'])->name('securite');
 
-        Route::get('/environnement', [MainController::class, 'environnement'])->name('environnement');
+        Route::get('/environnement', [GuestEnvironnementController::class, 'environnement'])->name('environnement');
 
         Route::get('/tourisme', [MainController::class, 'tourisme'])->name('tourisme');
 
@@ -405,6 +407,16 @@ Route::prefix('admin/')->as('admin.')->group(function () {
             Route::patch('{culture}/update-processing', [CultureController::class, 'update'])->name('mairie.culture.update');
 
             Route::get('{culture}/destroy-processing', [CultureController::class, 'destroy'])->name('mairie.culture.destroy');
+        });
+
+        Route::prefix('environnement/')->group(function () {
+            Route::get('', [EnvironnementContoller::class, 'index'])->name('mairie.environnement.index');
+
+            Route::post('store-processing', [EnvironnementContoller::class, 'store'])->name('mairie.environnement.store');
+
+            Route::patch('{environnement}/update-processing', [EnvironnementContoller::class, 'update'])->name('mairie.environnement.update');
+
+            Route::get('{environnement}/destroy-processing', [EnvironnementContoller::class, 'destroy'])->name('mairie.environnement.destroy');
         });
 
     });

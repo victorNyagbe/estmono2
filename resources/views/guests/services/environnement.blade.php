@@ -99,33 +99,30 @@ Des actions de sensibilisation sont également menées pour encourager les habit
                                 <tr style="background-color: #2b3481; color: white; text-align: center;">
                                     <th width="50">N°</th>
                                     <th>SERVICE</th>
-                                    <th>CONTACT</th>
                                     <th>RESPONSABLE</th>
+                                    <th>CONTACT</th>
                                     <th width="80">ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
-                                 <tr>
-                                    <td>3</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
+
+
+                                <?php $compteur1 = 1; $compteur2 = 1; ?>
+                                @forelse ($environnement_publiques as $environnement_publique)
+                                    <tr>
+                                        <td>{{ $compteur1 }}</td>
+                                        <td>{{ $environnement_publique->name }}</td>
+
+                                        <td>{{ $environnement_publique->responsable == null ? '-' : $environnement_publique->responsable }}</td>
+                                        <td>{{ $environnement_publique->contact == null ? '-' : $environnement_publique->contact  }}</td>
+                                        <td><a href="tel:{{$environnement_publique->contact  }}" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                    </tr>
+                                    <?php $compteur1++; ?>
+                                @empty
+                                    <tr class="text-center">
+                                        <td colspan="6">Information en cours ...</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
@@ -146,33 +143,30 @@ Des actions de sensibilisation sont également menées pour encourager les habit
                                 <tr style="background-color: #2b3481; color: white; text-align: center;">
                                     <th width="50">N°</th>
                                     <th>SERVICE</th>
-                                    <th>CONTACT</th>
                                     <th>RESPONSABLE</th>
+                                    <th>CONTACT</th>
                                     <th width="80">ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
+
+
+                                @forelse ($environnement_privees as $environnement_privee)
                                 <tr>
-                                    <td>1</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                    <td>{{ $compteur2 }}</td>
+                                    <td>{{ $environnement_privee->name }}</td>
+
+                                    <td>{{ $environnement_privee->responsable == null ? '-' :  $environnement_privee->responsable }}</td>
+                                    <td>{{ $environnement_privee->contact == null ? '-' : $environnement_privee->contact }}</td>
+                                    <td><a href="tel:{{$environnement_privee->contact  }}" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
+                                <?php $compteur2++; ?>
+                            @empty
+                                <tr class="text-center">
+                                    <td colspan="6">Information en cours ...</td>
                                 </tr>
-                                 <tr>
-                                    <td>3</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td>A renseigner !!</td>
-                                    <td><a href="tel:+" class="btn btn-sm btn-primary text-white"><i class="fa fa-phone"></i></a></td>
-                                </tr>
+                            @endforelse
+
                             </tbody>
                         </table>
                     </div>

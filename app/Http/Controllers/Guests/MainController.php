@@ -489,12 +489,7 @@ class MainController extends Controller
         return view('guests.services.securite', compact('page'));
     }
 
-    public function environnement()
-    {
-        $page = 'mairie';
 
-        return view('guests.services.environnement', compact('page'));
-    }
 
     public function tourisme()
     {
