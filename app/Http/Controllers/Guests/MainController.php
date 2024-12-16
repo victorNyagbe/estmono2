@@ -47,7 +47,7 @@ class MainController extends Controller
     {
         $page = 'welcome';
 
-        $about = About::where('id', 1)->first();
+        $about = About::where('id', 2)->first();
 
         $maire = Maire::where('id', 1)->first();
 
@@ -244,7 +244,7 @@ class MainController extends Controller
 
     public function about()
     {
-        $about = About::where('id', 1)->first();
+        $about = About::all();
 
         $page = 'about';
 

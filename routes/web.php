@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\AboutCommuneController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\AboutVisionController;
 use App\Http\Controllers\Admin\CarteController;
 use App\Http\Controllers\Admin\MaireController;
 use App\Http\Controllers\Guests\MainController;
@@ -254,11 +256,15 @@ Route::prefix('admin/')->as('admin.')->group(function () {
 
     /* A Propos */
     Route::prefix('a-propos/')->middleware('check.authenticated.admin')->group(function () {
-        Route::get('', [AboutController::class, 'index'])->name('about.index');
+        Route::get('decentralisation/', [AboutController::class, 'index'])->name('about.decentralisation');
+        Route::get('vision/', [AboutVisionController::class, 'index'])->name('about.vision');
+        Route::get('commune/', [AboutCommuneController::class, 'index'])->name('about.commune');
 
         // Route::post('store-processing', [AboutController::class, 'store'])->name('about.store');
 
-        Route::patch('update-processing/{about}', [AboutController::class, 'update'])->name('about.update');
+        Route::patch('decentralisation-processing/{about}', [AboutController::class, 'store'])->name('about.decentralisation-store');
+        Route::patch('commune-processing/{about}', [AboutCommuneController::class, 'store'])->name('about.commune-store');
+        Route::patch('vision-processing/{about}', [AboutVisionController::class, 'store'])->name('about.vision-store');
     });
 
     /* Projets */

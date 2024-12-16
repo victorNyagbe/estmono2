@@ -3,17 +3,17 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Enums\AboutTypes;
-use App\Models\About;
-use Illuminate\Support\Str;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AboutCommuneRequest;
 use App\Http\Requests\AboutRequest;
+use App\Models\About;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
-class AboutController extends Controller
+class AboutCommuneController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -21,12 +21,12 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $about = About::where('type', AboutTypes::Decentralisation)->first();
+        $about = About::where('type', AboutTypes::Commune)->first();
 
         $page = 'admin.about';
         $page_item = '';
 
-        return view('admin.about.decentralisation', compact('about', 'page', 'page_item'));
+        return view('admin.about.commune', compact('about', 'page', 'page_item'));
     }
 
     /**
@@ -35,31 +35,7 @@ class AboutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    // public function store(AboutRequest $request)
-    // {
-    //     $request->validated(
-    //     //     [
-    //     //     'image' => 'required|file|image|mimes:png,jpg,jpeg,jfif,webp',
-    //     //     'text' => 'required'
-    //     // ], [
-    //     //     'image.required' => 'Veuillez choisir l\'image',
-    //     //     'image.file' => 'Le fichier choisi est invalide',
-    //     //     'image.image' => 'Le fichier choisi est invalide',
-    //     //     'image.mimes' => 'Veuillez choisir une image valide',
-    //     //     'text.required' => 'Veuillez renseigner le texte'
-    //     // ]
-    // );
-
-    //     About::create([
-    //         'image' => request('image')->store('about', 'public'),
-    //         'type' => AboutTypes::Decentralisation,
-    //         'subtitle' => Str::substr($request->descriptionText, 0, 500),
-    //         'text' => $request->text
-    //     ]);
-
-    //     return redirect()->back()->with('success', 'Opération réussie!');
-    // }
-    public function store(AboutRequest $request, About $about)
+    public function store(AboutCommuneRequest $request, About $about)
     {
         $verify_about = About::where('id', $about->id)->first();
         $fields = $request->validated(
@@ -68,7 +44,7 @@ class AboutController extends Controller
     $oldImage = $verify_about->image;
    }
    $image = $request->hasFile('image') ? $request->file('image')->store('about', 'public') : $image = null;
-       if($fields['decentralisation']){
+    if($fields['commune']){
         About::updateOrCreate([
             // $verify_about,
             'type' => $about->type,
@@ -76,11 +52,11 @@ class AboutController extends Controller
 
         ],[
             'image' => $image,
-            'type' => AboutTypes::Decentralisation,
+            'type' => AboutTypes::Commune,
             'subtitle' => Str::substr($request->descriptionText, 0, 500),
-            'text' => $fields['decentralisation']
+            'text' => $fields['commune']
         ]);
-       } 
+    }        
 
         return redirect()->back()->with('success', 'Opération réussie!');
     }
@@ -126,9 +102,10 @@ class AboutController extends Controller
 
         $about->update([
             'subtitle' => Str::substr($request->descriptionText, 0, 500),
-            'text' => $request->text
+            'text' => $request->text,
+            'type' => $about->type
         ]);
 
         return redirect()->back()->with('success', 'Opération réussie!');
-    }
+    } 
 }

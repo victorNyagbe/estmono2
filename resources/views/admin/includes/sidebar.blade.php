@@ -47,10 +47,31 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ route('admin.about.index') }}" class="nav-link {{ $page == 'admin.about' ? 'active' : '' }}">
+                <a href="" class="nav-link {{ $page == 'admin.about' ? 'active' : '' }}">
                     <i class="nav-icon fas fa-info"></i>
                     <p>A Propos</p>
+                    <i class="right fas fa-angle-left"></i>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ route('admin.about.decentralisation') }}" class="nav-link {{ $page == 'admin.decentralisation' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>décentralisation</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.about.commune') }}" class="nav-link {{ $page_item == 'admin.commune' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>commune Est-Mono2</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('admin.about.vision') }}" class="nav-link {{ $page_item == 'admin.vision' ? 'active' : '' }}">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Notre vision</p>
+                        </a>
+                    </li>
+                </ul>
             </li>
 
             <li class="nav-item">

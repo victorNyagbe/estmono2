@@ -10,7 +10,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">A Propos</h1>
+                        <h1 class="m-0">Notre vision</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="col-12 col-lg-7">
-                        <form action="{{ route('admin.about.update', $about) }}" method="post" enctype="multipart/form-data" id="createForm">
+                        <form action="{{ route('admin.about.vision-store', $about) }}" method="post" enctype="multipart/form-data" id="createForm">
                             @csrf
                             @method('PATCH')
                             <div class="form-group">
@@ -43,7 +43,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="text">Texte:</label>
-                                <textarea name="text" id="text" class="form-control description">{!! $about->text !!}</textarea>
+                                <textarea name="vision" id="text" class="form-control description">{!! $about->text !!}</textarea>
                             </div>
                                 <textarea name="descriptionText" id="descriptionText" class="form-control d-none"></textarea>
                             <div class="form-group">
@@ -88,3 +88,4 @@
         });
     </script>
 @endsection
+
